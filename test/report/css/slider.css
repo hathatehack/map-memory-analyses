@@ -1,0 +1,108 @@
+body {
+    margin: 0 auto;
+    padding: 0; 
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    background-color: #EDEDEC;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+#slider {
+    width: 1900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scroll {
+    width: 1840px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    clear: left;
+    background: #FFFFFF;
+
+}
+
+.scrollContainer div.panel {
+    width: 1840px;
+    height: 900px;
+    padding: 15px 0px 25px 15px ;  /* Let the scrollbar overflow and be hidden by the .scroll */
+}
+
+.scrollButtons {
+    /* position: absolute; */
+    /* top: 0; bottom: 0; */
+    /* margin: auto; */
+    position: fixed;
+    top: 50%;
+    transform: scaleX(3) scaleY(8);
+    color: #505050;
+    user-select: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+    /* left: 20px; */
+    margin-left: 5px;  /* 使用margin不用left，相对于父级定位*/
+}
+
+.scrollButtons.right {
+    right: 15px;
+    /* margin-left: 1865px;  /* 使用margin不用left，相对于父级定位*/
+}
+
+ul.navigation {
+    width: 1840px;
+    /* float: left; */
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    list-style: none;
+    
+    /* horizontal scroll setting */
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+ul.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+ul.navigation li {
+    display: inline;
+    /* margin-right: 10px; */
+}
+
+ul.navigation a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.navigation a:hover {
+    background-color: #f6f6f6;
+}
+
+ul.navigation a.selected {
+    background-color: #fff;
+}
+
+ul.navigation a:focus {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* #shade {
+    background: #EDEDEC url(../images/shade.jpg) no-repeat 0 0;
+    height: 50px;
+} */

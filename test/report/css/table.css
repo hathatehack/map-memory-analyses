@@ -1,0 +1,79 @@
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: auto;
+}
+
+.detail {
+    margin-top: 30px;
+    display: none;
+}
+
+tr {
+    height: 18px;
+}
+
+td {
+    padding:0 0 0 20px;
+    font-style:normal;
+    font-family:宋体;
+    font-size:11.0pt;
+    font-weight:700;
+    text-decoration:none;
+    text-align:center;
+    vertical-align:bottom;
+    white-space:nowrap;
+    color:black;
+}
+
+
+/* Summary */
+.summaryTitleBar {
+    font-style:italic;
+}
+
+.summaryTitleColumn {
+    font-style:normal;
+    text-align:right;
+}
+
+.summaryData {
+    color:#FA7D00;
+    text-align:right;
+    background:#F2F2F2;
+}
+
+.summaryTotal {
+    text-align:right;
+    background:#B2B2B2;
+}
+
+
+/* Detail */
+.detailTitleBar {
+    color:#7F7F7F;
+    font-weight:400;
+    font-style:italic;
+}
+
+.detailData {
+    color:#3F3F76;
+    font-weight:400;
+    text-align:right;
+    background:#FFCC99;
+}
+
+.detailTotal {
+    color:#3F3F76;
+    font-weight:400;
+    text-align:right;
+    background:#FFA347;
+}
+
+.detailMisc {
+    padding:0 5px;
+    color:#3F3F76;
+    font-weight:400;
+    text-align:left;
+    background:#FFCC99;
+}

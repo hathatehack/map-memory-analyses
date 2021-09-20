@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%; margin: 0">
+<head>
+    <meta charset="utf-8">
+    <title>Summary</title>
+    <link rel="stylesheet" href="../css/table.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/table.summaryCSS.js"></script>
+    <script type="text/javascript" src="../js/echarts.min.js"></script>
+</head>
+
+<body style="height: 100%; width: 100%; margin: 0">
+    <table border=0>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>.boot_struct</td>
+                <td>.boot_text_flash</td>
+                <td>.vector_table</td>
+                <td>.reboot_param</td>
+                <td>.userdata_pool</td>
+                <td>.boot_text_sram</td>
+                <td>.boot_data_sram</td>
+                <td>.boot_bss_sram</td>
+                <td>.sram_text</td>
+                <td>.sram_data</td>
+                <td>.sram_bss</td>
+                <td>.fast_text_sram</td>
+                <td>.overlay_text0</td>
+                <td>.overlay_text1</td>
+                <td>.overlay_data0</td>
+                <td>.overlay_data1</td>
+                <td>.text</td>
+                <td>.ARM.exidx</td>
+                <td>.rodata</td>
+                <td>.custom.cmd.table</td>
+                <td>.data</td>
+                <td>.bss</td>
+                <td>.heap</td>
+                <td>.stack_dummy</td>
+                <td>.build_info</td>
+                <td>.code_start_addr</td>
+                <td>.userdata</td>
+                <td>.factory</td>
+                <td>*fill*</td>
+                <td>TOTAL</td>
+            </tr>
+        
+            <tr>
+                <td>utils</td>
+                <td>16</td>
+                <td>0</td>
+                <td>0</td>
+                <td>16</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1584</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1260</td>
+                <td>0</td>
+                <td>554</td>
+                <td>0</td>
+                <td>104</td>
+                <td>7888</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>36</td>
+                <td>11458</td>
+            </tr>
+        
+            <tr>
+                <td>platform</td>
+                <td>0</td>
+                <td>1940</td>
+                <td>248</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3456</td>
+                <td>169</td>
+                <td>168</td>
+                <td>1244</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>42796</td>
+                <td>0</td>
+                <td>12666</td>
+                <td>0</td>
+                <td>396</td>
+                <td>5555</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>114</td>
+                <td>68752</td>
+            </tr>
+        
+            <tr>
+                <td>services</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>12</td>
+                <td>4096</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>816</td>
+                <td>1104</td>
+                <td>30324</td>
+                <td>28204</td>
+                <td>17396</td>
+                <td>817</td>
+                <td>100</td>
+                <td>379196</td>
+                <td>0</td>
+                <td>221841</td>
+                <td>144</td>
+                <td>664</td>
+                <td>97919</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>219</td>
+                <td>782852</td>
+            </tr>
+        
+            <tr>
+                <td>gcc</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>38</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>54</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>22976</td>
+                <td>8</td>
+                <td>912</td>
+                <td>0</td>
+                <td>172</td>
+                <td>184</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>34</td>
+                <td>24378</td>
+            </tr>
+        
+            <tr>
+                <td>apps</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>44</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>17516</td>
+                <td>0</td>
+                <td>3818</td>
+                <td>0</td>
+                <td>409</td>
+                <td>88016</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>73</td>
+                <td>109876</td>
+            </tr>
+        
+            <tr>
+                <td>rtos</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>9520</td>
+                <td>0</td>
+                <td>768</td>
+                <td>0</td>
+                <td>144</td>
+                <td>3494</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>24</td>
+                <td>13950</td>
+            </tr>
+        
+            <tr>
+                <td>mbed</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>324</td>
+                <td>0</td>
+                <td>104</td>
+                <td>0</td>
+                <td>4</td>
+                <td>64</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>498</td>
+            </tr>
+        
+            <tr>
+                <td>config</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>108</td>
+                <td>0</td>
+                <td>20</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>128</td>
+            </tr>
+        
+            <tr>
+                <td>build_info</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>168</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>168</td>
+            </tr>
+        
+            <tr>
+                <td>*expression*</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>24</td>
+            </tr>
+        
+            <tr>
+                <td>*fill*</td>
+                <td>0</td>
+                <td>4</td>
+                <td>8</td>
+                <td>36</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7</td>
+                <td>0</td>
+                <td>34</td>
+                <td>0</td>
+                <td>207</td>
+                <td>0</td>
+                <td>27</td>
+                <td>164</td>
+                <td>1028</td>
+                <td>3328</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4096</td>
+                <td>4096</td>
+                <td>0</td>
+                <td>13050</td>
+            </tr>
+        
+            <tr>
+                <td>TOTAL</td>
+                <td>16</td>
+                <td>1944</td>
+                <td>256</td>
+                <td>64</td>
+                <td>4096</td>
+                <td>3496</td>
+                <td>172</td>
+                <td>176</td>
+                <td>1244</td>
+                <td>816</td>
+                <td>1104</td>
+                <td>32008</td>
+                <td>28208</td>
+                <td>17400</td>
+                <td>828</td>
+                <td>104</td>
+                <td>473622</td>
+                <td>8</td>
+                <td>240978</td>
+                <td>144</td>
+                <td>1940</td>
+                <td>203284</td>
+                <td>1028</td>
+                <td>3328</td>
+                <td>168</td>
+                <td>8</td>
+                <td>4096</td>
+                <td>4096</td>
+                <td>502</td>
+                <td>1025134</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+    <div style="display: inline-flex;">
+        <ol style="list-style-type:none">
+            <li>text:</li>
+            <li>data:</li>
+            <li>bss:</li>
+            <li>heap:</li>
+            <li>stack:</li>
+        </ol>
+        <ol style="list-style-type:none; padding-left: 10px;">
+            <li>553.182KB</li>
+            <li>243.412KB</li>
+            <li>199.770KB</li>
+            <li>1028B</li>
+            <li>3328B</li>
+        </ol>
+    </div>
+
+    
+        <div id="c801cd135a854d92a34c0e7522a480cb" class="chart-container" style="width:60%; height:60%; margin: 30px auto;"></div>
+    <script>
+        var chart_c801cd135a854d92a34c0e7522a480cb = echarts.init(
+            document.getElementById('c801cd135a854d92a34c0e7522a480cb'), '', {renderer: 'canvas'});
+        
+        var option_c801cd135a854d92a34c0e7522a480cb = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": "module",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "utils",
+                    "value": 11458
+                },
+                {
+                    "name": "platform",
+                    "value": 68752
+                },
+                {
+                    "name": "services",
+                    "value": 782852
+                },
+                {
+                    "name": "gcc",
+                    "value": 24378
+                },
+                {
+                    "name": "apps",
+                    "value": 109876
+                },
+                {
+                    "name": "rtos",
+                    "value": 13950
+                },
+                {
+                    "name": "mbed",
+                    "value": 498
+                },
+                {
+                    "name": "config",
+                    "value": 128
+                },
+                {
+                    "name": "build_info",
+                    "value": 168
+                },
+                {
+                    "name": "*expression*",
+                    "value": 24
+                },
+                {
+                    "name": "*fill*",
+                    "value": 13050
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "utils",
+                "platform",
+                "services",
+                "gcc",
+                "apps",
+                "rtos",
+                "mbed",
+                "config",
+                "build_info",
+                "*expression*",
+                "*fill*"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "right": "0",
+            "top": "middle",
+            "orient": "vertical",
+            "padding": [
+                50,
+                0
+            ],
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": "{a} <br/>{b} : {c} ({d}%)",
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "modules",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_c801cd135a854d92a34c0e7522a480cb.setOption(option_c801cd135a854d92a34c0e7522a480cb);
+        
+            window.addEventListener('resize', function(){
+                chart_c801cd135a854d92a34c0e7522a480cb.resize();
+            })
+        
+    </script>
+    
+        <div id="8ad4b3f58809420aab731dcfd758016c" class="chart-container" style="width:60%; height:60%; margin: 30px auto;"></div>
+    <script>
+        var chart_8ad4b3f58809420aab731dcfd758016c = echarts.init(
+            document.getElementById('8ad4b3f58809420aab731dcfd758016c'), '', {renderer: 'canvas'});
+        
+        var option_8ad4b3f58809420aab731dcfd758016c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": "section",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": ".boot_struct",
+                    "value": 16
+                },
+                {
+                    "name": ".boot_text_flash",
+                    "value": 1944
+                },
+                {
+                    "name": ".vector_table",
+                    "value": 256
+                },
+                {
+                    "name": ".reboot_param",
+                    "value": 64
+                },
+                {
+                    "name": ".userdata_pool",
+                    "value": 4096
+                },
+                {
+                    "name": ".boot_text_sram",
+                    "value": 3496
+                },
+                {
+                    "name": ".boot_data_sram",
+                    "value": 172
+                },
+                {
+                    "name": ".boot_bss_sram",
+                    "value": 176
+                },
+                {
+                    "name": ".sram_text",
+                    "value": 1244
+                },
+                {
+                    "name": ".sram_data",
+                    "value": 816
+                },
+                {
+                    "name": ".sram_bss",
+                    "value": 1104
+                },
+                {
+                    "name": ".fast_text_sram",
+                    "value": 32008
+                },
+                {
+                    "name": ".overlay_text0",
+                    "value": 28208
+                },
+                {
+                    "name": ".overlay_text1",
+                    "value": 17400
+                },
+                {
+                    "name": ".overlay_data0",
+                    "value": 828
+                },
+                {
+                    "name": ".overlay_data1",
+                    "value": 104
+                },
+                {
+                    "name": ".text",
+                    "value": 473622
+                },
+                {
+                    "name": ".ARM.exidx",
+                    "value": 8
+                },
+                {
+                    "name": ".rodata",
+                    "value": 240978
+                },
+                {
+                    "name": ".custom.cmd.table",
+                    "value": 144
+                },
+                {
+                    "name": ".data",
+                    "value": 1940
+                },
+                {
+                    "name": ".bss",
+                    "value": 203284
+                },
+                {
+                    "name": ".heap",
+                    "value": 1028
+                },
+                {
+                    "name": ".stack_dummy",
+                    "value": 3328
+                },
+                {
+                    "name": ".build_info",
+                    "value": 168
+                },
+                {
+                    "name": ".code_start_addr",
+                    "value": 8
+                },
+                {
+                    "name": ".userdata",
+                    "value": 4096
+                },
+                {
+                    "name": ".factory",
+                    "value": 4096
+                },
+                {
+                    "name": "*fill*",
+                    "value": 502
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ".boot_struct",
+                ".boot_text_flash",
+                ".vector_table",
+                ".reboot_param",
+                ".userdata_pool",
+                ".boot_text_sram",
+                ".boot_data_sram",
+                ".boot_bss_sram",
+                ".sram_text",
+                ".sram_data",
+                ".sram_bss",
+                ".fast_text_sram",
+                ".overlay_text0",
+                ".overlay_text1",
+                ".overlay_data0",
+                ".overlay_data1",
+                ".text",
+                ".ARM.exidx",
+                ".rodata",
+                ".custom.cmd.table",
+                ".data",
+                ".bss",
+                ".heap",
+                ".stack_dummy",
+                ".build_info",
+                ".code_start_addr",
+                ".userdata",
+                ".factory",
+                "*fill*"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "right": "0",
+            "top": "middle",
+            "orient": "vertical",
+            "padding": [
+                50,
+                0
+            ],
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": "{a} <br/>{b} : {c} ({d}%)",
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "sections",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8ad4b3f58809420aab731dcfd758016c.setOption(option_8ad4b3f58809420aab731dcfd758016c);
+        
+            window.addEventListener('resize', function(){
+                chart_8ad4b3f58809420aab731dcfd758016c.resize();
+            })
+        
+    </script>
+</body>
+</html>

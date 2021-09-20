@@ -1,0 +1,21 @@
+# Classify the objects of section into certain classification.
+# Three rule types are provided:
+# 1.[match_re. The re needs to have one group "()"],
+# 2.[match_re, classification],
+# 3.[match_str, classification]
+classification_rules:
+  - match_re: ^(\w+)/[/\w]*built-in.a\([\w\_\.]+\.o\)
+  - match_re: ^\.[/\w\-]+\.o
+    classification: application
+  - match_str: lib/gcc/arm-none-eabi
+    classification: gcc
+  - match_str: build_info.o
+    classification: build_info
+
+# Group sections according to your lds file and count the group size.
+section_group_sizes:
+  text: [.boot_struct, .boot_text_flash, .boot_text_sram, .sram_text, .fast_text_sram, .overlay_text0, .overlay_text1, .text,  .ARM.exidx, .custom.cmd.table, .build_info, .code_start_addr, .audio, .userdata, .factory]
+  data: [.vector_table, .reboot_param, .userdata_pool, .boot_data_sram, .sram_data, .overlay_data0, .overlay_data1, .rodata, .data]
+  bss: [.boot_bss_sram, .sram_bss, .bss]
+  heap: [.heap]
+  stack: [.stack_dummy]

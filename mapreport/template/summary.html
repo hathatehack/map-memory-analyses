@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%; margin: 0">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../css/table.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/table.summaryCSS.js"></script>
+    <script type="text/javascript" src="../js/echarts.min.js"></script>
+</head>
+
+<body style="height: 100%; width: 100%; margin: 0">
+    <table border=0>
+        <tbody>
+        {%- for row in table %}
+            <tr>
+            {%- for item in row %}
+                <td>{{ item }}</td>
+            {%- endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div style="display: inline-flex;">
+        <ol style="list-style-type:none">
+        {%- for items in section_group_sizes %}
+            <li>{{ items[0] }}:</li>
+        {%- endfor %}
+        </ol>
+        <ol style="list-style-type:none; padding-left: 10px;">
+        {%- for items in section_group_sizes %}
+            <li>{{ items[1] }}</li>
+        {%- endfor %}
+        </ol>
+    </div>
+
+    {{ pie_module }}
+    {{ pie_section }}
+</body>
+</html>
